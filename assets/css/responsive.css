@@ -1,0 +1,448 @@
+/* XL Device :1200px. */
+@media (min-width: 1300px) and (max-width: 1449px) {
+    
+
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+    
+    
+
+}
+
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .light-image {
+        top: -11%;
+    }
+
+    .card-item {
+        padding: 22px;
+    }
+
+    .card-item .spellbook-image {
+        height: 58%;
+    }
+
+    .figma-image {
+        height: 90%;
+    }
+
+    .transform-idea__image {
+        height: 376px;
+        top: 9%;
+    }
+
+    .auto-suggest__image {
+        height: 338px;
+    }
+
+    .new-possibilities__image {
+        height: 303px;
+    }
+
+    .design-system__image {
+        height: 282px;
+    }
+
+    .powered-ai__image {
+        height: 320px;
+    }
+
+    .smart-elements__image {
+        height: 236px;
+    }
+
+    .figma-file__image {
+        height: 225px;
+    }
+
+    .chat-genius__image {
+        height: 266px;
+    }
+
+    .spin-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .automator {
+        width: 280px;
+        height: 245px;
+    }
+
+}
+ 
+
+
+
+/* LG Device :992px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    h1 {
+        font-size: 62px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .card-area {
+        position: relative;
+        padding-top: 203px;
+        z-index: 1;
+    }
+
+    .card-item {
+        padding: 22px;
+        height: 380px;
+    }
+
+    .light-image {
+        top: -4%;
+    }
+
+    .spin-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .card-item .spellbook-image {
+        height: 58%;
+    }
+
+    .figma-image {
+        height: 90%;
+    }
+
+    .transform-idea__image {
+        height: 352px;
+        top: 22%;
+    }
+
+    .auto-suggest__image {
+        height: 294px;
+    }
+
+    .new-possibilities__image {
+        height: 256px;
+    }
+
+    .design-system__image {
+        height: 230px;
+    }
+
+    .powered-ai__image {
+        width: 70%;
+        height: 362px;
+    }
+
+    .smart-elements__image {
+        width: 70%;
+        height: 259px;
+    }
+
+    .figma-file__image {
+        width: 65%;
+        height: 250px;
+    }
+
+    .chat-genius__image {
+        width: 67%;
+        height: 300px;
+    }
+
+    .genius-area {
+        padding-top: 135px;
+    }
+
+    .spin-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .automator-area {
+        padding-top: 155px;
+    }
+
+    .automator {
+        width: 258px;
+        height: 225px;
+    }
+
+    .busy-work__image {
+        height: 255px;
+    }
+
+    .build-automation__image {
+        height: 230px;
+    }
+
+    .team-automation__image {
+        height: 218px;
+    }
+
+    .community-automation__image {
+        height: 240px;
+    }
+
+    .uiai-area {
+        padding-top: 155px;
+    }
+
+    .ai-designer__image {
+        height: 223px;
+    }
+
+    .playground__image {
+        height: 223px;
+    }
+
+    .footer-area {
+        padding: 180px 0 16px;
+    }
+
+    .copyright-area {
+        padding-top: 74px;
+    }
+    
+}
+
+
+
+
+
+/* SM Small Device :320px. */
+@media only screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .section-content p {
+        margin: 8px 0 24px;
+    }
+
+    .primary-btn {
+        height: 42px;
+        padding: 10px 10px;
+        font-size: 11px;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .nav_trigger{
+        display: flex; 
+    }
+
+    .hero-area {
+        padding: 98px 0 0 0;
+    }
+
+    .light-image {
+        display: none;
+    }
+
+    .card-area {
+        padding-top: 60px;
+    }
+
+    .card-item {
+        max-width: 400px;
+        width: 100%;
+        height: 378px;
+        margin: auto;
+    }
+
+    .card-item__image {
+        height: 185px;
+    }
+
+    .conjure-image{
+        height: 220px;
+    }
+
+    .card-item .spellbook-image {
+        height: 56%;
+    }
+
+    .figma-image{
+        height: 320px;
+    }
+
+    .busy-work__image {
+        height: 248px;
+    }
+
+    .card-item .svg-generator__image {
+        height: 85%;
+    }
+
+    .card-item .layers-image {
+        height: 233px;
+    }
+
+    .genius-area {
+        padding-top: 135px;
+    }
+
+    .spin-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .genius-area .section-content {
+        margin-top: -18%;
+    }
+
+    .transform-idea__image {
+        height: 315px;
+        top: 28%;
+    }
+
+    .auto-suggest__image {
+        height: 312px;
+    }
+
+    .new-possibilities__image {
+        height: 247px;
+    }
+
+    .design-system__image {
+        height: 228px;
+    }
+
+    .powered-ai__image {
+        width: 74%;
+        height: 325px;
+    }
+
+    .smart-elements__image {
+        width: 84%;
+        height: 252px;
+    }
+
+    .figma-file__image {
+        width: 76%;
+        height: 245px;
+    }
+
+    .chat-genius__image {
+        width: 80%;
+        height: 325px;
+    }
+
+    .automator-area {
+        padding-top: 150px;
+    }
+
+    .automator {
+        width: 250px;
+        height: 224px;
+    }
+
+    .automator-area .section-content {
+        margin-top: -16%;
+    }
+
+    .busy-work__image {
+        height: 222px;
+    }
+
+    .build-automation__image {
+        height: 223px;
+    }
+
+    .team-automation__image {
+        height: 199px;
+    }
+
+    .community-automation__image {
+        height: 210px;
+    }
+
+    .uiai-area {
+        padding-top: 117px;
+    }
+
+    .uiai {
+        width: 235px;
+        height: 243px;
+    }
+
+    .uiai-area .section-content {
+        margin-top: -3%;
+    }
+
+    .ai-designer__image {
+        height: 209px;
+    }
+
+    .playground__image {
+        height: 190px;
+    }
+
+    .glyphs-option {
+        width: 77px;
+        height: 34px;
+    }
+
+    .footer-area {
+        padding: 120px 0 16px;
+    }
+
+    .copyright-area {
+        padding-top: 65px;
+    }
+
+    .social-links {
+        justify-content: start;
+    }
+    
+
+}
+
+
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .card-item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: flex-end;
+    }
+   
+}

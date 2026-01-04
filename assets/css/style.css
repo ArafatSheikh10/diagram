@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Base CSS */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+a:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    font-family: var(--primary-font);
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(../image/diagram-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 0;
+    z-index: 20;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.overlay.slide_sidebar{
+    opacity: .9;
+    visibility: visible;
+}
+
+:root {
+    /* Colors */
+    --primary-color: #ffffff;
+    --text-color: #A9A9A9;
+    --black: #000;
+
+    /* Fonts Family */
+    --primary-font: "Inter", sans-serif;
+
+    /* Font Weights */
+    --bold: 700;
+    --extarbold: 800;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+
+    /* Others */
+    --transition: .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    line-height: 120%;
+}
+
+h1 {  
+    font-size: 75px;
+    font-weight: var(--bold);
+    line-height: 120%;
+}
+
+h1 span{
+    background: -webkit-linear-gradient(50deg, #ffffff, #ffffff, #6b6a6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {  
+    font-size: 65px;
+    font-weight: var(--bold);
+    line-height: 120%;
+    background: -webkit-linear-gradient(50deg, #ffffff, #ffffff, #6b6a6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {  
+    font-size: 18px;
+    font-weight: var(--semibold);
+}
+
+h4 {  
+    font-size: 15px;
+    font-weight: var(--medium);
+}
+
+p {
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: var(--primary-font);
+    font-weight: var(--medium);
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ----- Section Content Start------- */
+
+
+.section-content{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.section-content p{
+    margin: 25px 0 32px;
+}
+
+.section-content .coming-soon{
+    font-size: 13px;
+    font-weight: var(--medium);
+    color: var(--text-color);
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+
+/* ----- Section Content Start------- */
+
+
+
+
+/* ----- Primary btn Start------- */
+
+.primary-btn{
+    width: fit-content;
+    height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background-color: #2A2A2B;
+    font-weight: var(--semibold);
+    line-height: 18px;
+    font-size: 13px;
+    font-family: var(--primary-font);
+    transition: 1s;
+    border: 1px solid #4D4D4F;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.primary-btn img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-top: 4px;
+}
+
+.primary-btn:hover{
+    border-color: var(--primary-color);
+}
+
+/* ----- Primary btn End------- */
+
+
+
+
+
+
+
+/* ---------------------- Header Area Start --------------------- */
+
+.nav-area{
+    position: absolute;
+    left: 50%;
+    top: 12px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.nav-area.container{
+    width: 1360px;
+}
+
+.logo{
+    display: inline-block;
+    width: 120px;
+    height: 28px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu{
+    position: relative;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #2C2C2E;
+    border: 1px solid #4D4D4F;
+    border-radius: 50px;
+}
+
+.nav-menu li a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: var(--semibold);
+    font-size: 13px;
+    font-family: var(--primary-font);
+    transition: var(--transition);
+    border-radius: 50px;
+    z-index: 1;
+}
+
+#indicator {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    background: #171719; 
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    z-index: 0;
+    pointer-events: none
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-btn{
+    width: 80px;
+}
+
+.nav_trigger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;   
+}
+
+.nav_trigger span{
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.nav_trigger span:nth-child(2){
+    width: 22px;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 300px;
+    background-color: #2C2C2E;
+    border: 1px solid #4D4D4F;
+    border-radius: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 999;
+    padding: 20px;
+    transition: 1s;
+}
+
+.sidebar.slide_sidebar{
+    left: 0;
+}
+
+.sidebar .menu-area {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar .logo {
+    width: 90px;
+}
+
+.sidebar .nav-menu {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 0;
+    background-color: transparent;
+}
+
+.sidebar .nav-menu li a {
+    padding: 15px 0;
+}
+
+.nav_dismess{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid #4D4D4F;
+    outline: none;
+    transition: 1s;
+}
+
+.nav_dismess:hover{
+    border-color: var(--primary-color);
+}
+
+
+/* ---------------------- Header Area End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Hero Area Start --------------------- */
+
+.hero-area{
+    position: relative;
+    padding: 124px 0 0 0;
+}
+
+.sparkle-img{
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+}
+
+/* ---------------------- Hero Area End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Magician Area Start--------------------- */
+
+.magician-area{
+    position: relative;
+    margin-top: -20%;
+}
+
+.card-area{
+    position: relative;
+    padding-top: 205px;
+    z-index: 1;
+}
+
+.light-image{
+    position: absolute;
+    top: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.card-item{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 30px;
+    border-radius: 24px;
+    background-color: #1D1C20;
+    border: 1px solid #4D4D4F;
+    overflow: hidden;
+    z-index: 1;
+    transition: 1s !important;
+}
+
+.card-item:hover{
+    border-color: var(--primary-color);
+}
+
+.card-item__content p{
+    font-family: var(--primary-font);
+    font-size: 14px;
+}
+
+.card-item__image{
+    width: 100%;
+    height: 220px;
+    z-index: -1;
+}
+
+.card-item__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-item .svg-generator__image{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.card-item .conjure-image{
+    margin-bottom: -60px;
+}
+
+.magical-card .magical-image{
+    width: 110%;
+    height: 290px;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+.magical-card .magical-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-item .spellbook-image {
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-57%);
+    width: 93%;
+    height: 65%;
+}
+
+.card-item .layers-image {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 272px;
+}
+
+.figma-image {
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* ---------------------- Magician Area End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Genius Area Start --------------------- */
+
+.genius-area{
+    padding-top: 215px;
+}
+
+.spin-image{
+    display: block;
+    width: 330px;
+    height: 330px;
+    margin: auto;
+}
+
+.genius-area .section-content{
+    margin-top: -15%;
+}
+
+.genius-area .primary-btn img {
+    margin-top: 0px;
+}
+
+.genius-area .card-area{
+    padding-top: 56px;
+}
+
+.transform-idea__image {
+    width: 100%;
+    height: 407px;
+    position: absolute;
+    left: 50%;
+    top: -1%;
+    transform: translateX(-50%);
+}
+
+.auto-suggest__image {
+    width: 100%;
+    height: 389px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.new-possibilities__image {
+    width: 100%;
+    height: 328px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-47%);
+}
+
+
+.design-system__image {
+    width: 100%;
+    height: 336px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.powered-ai__image {
+    width: 100%;
+    height: 398px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smart-elements__image {
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.figma-file__image {
+    width: 88%;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.chat-genius__image {
+    width: 100%;
+    height: 331px;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ---------------------- Genius Area End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Automator Area Start --------------------- */
+
+.automator-area{
+    padding-top: 215px;
+}
+
+.automator{
+    display: block;
+    width: 330px;
+    height: 288px;
+    margin: auto;
+}
+
+.automator-area .section-content{
+    margin-top: -15%;
+}
+
+
+.automator-area .card-area{
+    padding-top: 56px;
+}
+
+.automator-area .card-item__image{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.busy-work__image {
+    height: 276px;   
+}
+
+.build-automation__image {
+    height: 300px;
+}
+
+.team-automation__image {
+    height: 280px;
+}
+
+.community-automation__image {
+    height: 270px;
+}
+
+
+/* ---------------------- Automator Area End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- UIAi Area Start --------------------- */
+
+.uiai-area{
+    padding-top: 215px;
+}
+
+.uiai {
+    display: block;
+    width: 290px;
+    height: 326px;
+    margin: auto;
+}
+
+.uiai-area .section-content {
+    margin-top: -5%;
+}
+
+
+.uiai-area .card-area{
+    padding-top: 56px;
+}
+
+.uiai-area .card-item__image{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ai-designer__image {
+    height: 280px;
+}
+
+.glyphs-option {
+    width: 116px;
+    height: 35px;
+    object-fit: contain;
+    margin-top: -16px;
+}
+
+.playground__image {
+    height: 280px;
+}
+
+
+/* ---------------------- UIAi Area End --------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- Footer Area Start --------------------- */
+
+.footer-area{
+    padding: 320px 0 16px;
+}
+
+.footer-item p{
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.footer-area .primary-btn {
+    height: auto;
+    padding: 10px 17px;
+}
+
+.footer-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer-menu li a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: var(--medium);
+    font-family: var(--primary-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.footer-menu li a:hover{
+    color: #c4c4c4;
+}
+
+.copyright-area{
+    padding-top: 165px;
+}
+
+.copyright-area p{
+    font-size: 13px;
+}
+
+.social-links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.social-links li a{
+    display: inline-block;
+    font-size: 18px;
+    color: #8A8A8B;
+    transition: var(--transition);
+}
+
+.social-links li:nth-child(2) a span{
+    transform: rotate(95deg);
+}
+
+.social-links li a:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* ---------------------- Footer Area End --------------------- */
+
